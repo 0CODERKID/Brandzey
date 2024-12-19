@@ -11,7 +11,7 @@ const BrandText = () => {
       <Text3D
         font={font}
         size={1.5}
-        height={0.2}
+        height={2}
         curveSegments={12}
       >
         {`BRANDZEY`}
