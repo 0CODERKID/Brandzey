@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: '21+', label: 'Years of Overall Experience' },
-  { value: '736k+', label: 'Real Followers Gained' },
-  { value: '167M+', label: 'Organic Views' }
+  { value: '21+', label:'Years of Overall Experience'},
+  { value: '736k+', label: 'Real Folowers Gained'  },
+  { value: '167M+', label: 'Organic Views'}
+
 ];
 
 export default function Stats() {
@@ -14,13 +15,13 @@ export default function Stats() {
           I Did It For Myself Too
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {stats.map((stat, index) => (
+          { stats.map((stat, index) => (
             <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: index * 0.2 }}
-              className="text-center p-6 rounded-xl bg-gray-700"
+            key={stat.label}
+            initial={{ opacity: 0, scale: 0.5}}
+            whileInView={{ opacity: 1, scale: 1}}
+            transition={{ delay: index * 0.2}}
+            className="text-center p-6 rounded-xl bg-gray-700"
             >
               <div className="text-4xl font-bold text-purple-400 mb-2">
                 {stat.value}
